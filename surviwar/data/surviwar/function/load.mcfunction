@@ -18,15 +18,8 @@ scoreboard players set lobby structureGen 0
 
 
 #TIPS
-tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:""}}]
+tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]
 execute in surviwar:lobby run forceload add 0 0 0 0
 execute in surviwar:arena run forceload add 0 0 0 0
 
-execute in surviwar:lobby if loaded 0 0 0 run scoreboard players remove isDimensionNotLoaded sw_TMP 1
-execute in surviwar:arena if loaded 0 0 0 run scoreboard players remove isDimensionNotLoaded sw_TMP 1
-
-execute if score isDimensionNotLoaded sw_TMP matches 1.. run tellraw @a [{score:{name:"isDimensionNotLoaded",objective:"sw_TMP"},color:red},{text:" dimension(s) are not loaded, please reenter your world!",color:red}]
-execute if score isDimensionNotLoaded sw_TMP matches 1.. run tellraw @a [{score:{name:"isDimensionNotLoaded",objective:"sw_TMP"},color:red},{text:" 个维度没有正确加载，请尝试重新进入这个世界。",color:red}]
-
-execute in surviwar:lobby run forceload remove all
-execute in surviwar:arena run forceload remove all
+schedule function surviwar:deforceload 3s replace
