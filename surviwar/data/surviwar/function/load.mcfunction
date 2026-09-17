@@ -12,6 +12,7 @@ scoreboard objectives add gameSettings trigger
 
 #scoreboard objectives add gui_page dummy
 scoreboard objectives add gamer dummy
+#0旁观 1玩家
 scoreboard objectives add gui_type dummy
 scoreboard objectives add structureGen dummy
 #init
@@ -20,6 +21,9 @@ scoreboard players set arena structureGen 0
 scoreboard players set lobby structureGen 0
 
 gamerule keep_inventory true
+
+execute unless score gameState gaming matches 1.. run scoreboard players set gameState gaming 0
+execute as @a unless score @s gamer matches 0.. run scoreboard players set @s gamer 1
 
 #TIPS
 tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]

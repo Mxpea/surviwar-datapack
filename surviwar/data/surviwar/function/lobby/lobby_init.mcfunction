@@ -8,3 +8,5 @@ xp set @a 0 levels
 difficulty peaceful
 gamerule locator_bar true
 clear @a
+
+scoreboard players set gameState gaming 0
