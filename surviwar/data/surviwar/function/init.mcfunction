@@ -1,1 +1,1 @@
-#/give @s minecraft:iron_helmet[minecraft:equippable={camera_overlay:"surviwar:item/icon",slot:"mainhand"}]
+#give @s minecraft:paper[item_model="surviwar:empty",item_name={text:"技术物品",color:"yellow"},minecraft:equippable={camera_overlay:"surviwar:item/aure_normal",slot:"offhand"}]

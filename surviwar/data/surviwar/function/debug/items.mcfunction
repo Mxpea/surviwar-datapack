@@ -21,6 +21,7 @@ give @s minecraft:explorer_pottery_sherd[item_model="surviwar:player",item_name=
 give @s minecraft:flow_pottery_sherd[item_model="surviwar:ranteam",item_name={translate:"sw.gui.button.ranteam",color:"yellow"},lore=[{translate:"sw.gui.button.ranteam.tooltip",color:"gray"}]]
 give @s minecraft:friend_pottery_sherd[item_model="surviwar:teams",item_name={translate:"sw.gui.button.teams",color:"yellow"}]
 give @s minecraft:brewer_pottery_sherd[item_model="surviwar:question",item_name={translate:"sw.gui.button.help",color:"yellow"},lore=[{translate:"sw.gui.button.help.tooltip",color:"gray"}]]
+give @s minecraft:paper[item_model="surviwar:empty",item_name={text:"技术物品",color:"yellow"}]
 
 #TEAMS
 #基本物品，tooltip需要动态更新

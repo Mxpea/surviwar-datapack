@@ -7,9 +7,12 @@ scoreboard objectives add gaming dummy
 #维护几个变量
 # gameState: 0-游戏未开始 1-游戏进行中 2-游戏结束
 
+
 scoreboard objectives add gameSettings trigger
 
-
+#scoreboard objectives add gui_page dummy
+scoreboard objectives add gamer dummy
+scoreboard objectives add gui_type dummy
 scoreboard objectives add structureGen dummy
 #init
 # 0-未生成 1-已生成
