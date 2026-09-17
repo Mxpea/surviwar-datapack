@@ -1,0 +1,1 @@
+$tellraw @s [{text:"$(Item)  ",color:"green"},{text:"[copy]",click_event:{action: "copy_to_clipboard",value:"$(Item)"},color:"yellow"}]

@@ -16,6 +16,7 @@ scoreboard objectives add structureGen dummy
 scoreboard players set arena structureGen 0
 scoreboard players set lobby structureGen 0
 
+gamerule keep_inventory true
 
 #TIPS
 tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]

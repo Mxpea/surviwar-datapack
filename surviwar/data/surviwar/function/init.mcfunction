@@ -1,0 +1,1 @@
+#/give @s minecraft:iron_helmet[minecraft:equippable={camera_overlay:"surviwar:item/icon",slot:"mainhand"}]
