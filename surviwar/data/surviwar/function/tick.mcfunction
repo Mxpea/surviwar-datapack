@@ -1,5 +1,6 @@
 
 scoreboard players enable @a isInTutorial
+title @a[team=spectator,gamemode=spectator] actionbar {translate:"sw.actionbar.spectator",color:gray} 
 
 execute as @a if score @s isInTutorial matches -1 run scoreboard players set @s tutorialCountDown 2
 execute as @a if score @s isInTutorial matches -1 run title @s actionbar " "
