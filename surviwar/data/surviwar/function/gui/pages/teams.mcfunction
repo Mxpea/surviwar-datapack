@@ -1,0 +1,30 @@
+item replace entity @s container.18 with minecraft:white_wool[item_name={translate:"sw.team.white",color:"white"}]
+item replace entity @s container.19 with minecraft:light_gray_wool[item_name={translate:"sw.team.light_gray",color:"gray"}]
+item replace entity @s container.20 with minecraft:gray_wool[item_name={translate:"sw.team.gray",color:"gray"}]
+item replace entity @s container.21 with minecraft:black_wool[item_name={translate:"sw.team.black",color:"white"}]
+item replace entity @s container.22 with minecraft:brown_wool[item_name={translate:"sw.team.brown",color:"gold"}]
+item replace entity @s container.23 with minecraft:red_wool[item_name={translate:"sw.team.red",color:"red"}]
+item replace entity @s container.24 with minecraft:orange_wool[item_name={translate:"sw.team.orange",color:"gold"}]
+item replace entity @s container.25 with minecraft:yellow_wool[item_name={translate:"sw.team.yellow",color:"yellow"}]
+item replace entity @s container.26 with minecraft:lime_wool[item_name={translate:"sw.team.lime",color:"green"}]
+item replace entity @s container.27 with minecraft:green_wool[item_name={translate:"sw.team.green",color:"dark_green"}]
+item replace entity @s container.28 with minecraft:cyan_wool[item_name={translate:"sw.team.cyan",color:"dark_aqua"}]
+item replace entity @s container.29 with minecraft:light_blue_wool[item_name={translate:"sw.team.light_blue",color:"aqua"}]
+item replace entity @s container.30 with minecraft:blue_wool[item_name={translate:"sw.team.blue",color:"blue"}]
+item replace entity @s container.31 with minecraft:purple_wool[item_name={translate:"sw.team.purple",color:"dark_purple"}]
+item replace entity @s container.32 with minecraft:magenta_wool[item_name={translate:"sw.team.magenta",color:"light_purple"}]
+item replace entity @s container.33 with minecraft:pink_wool[item_name={translate:"sw.team.pink",color:"light_purple"}]
+item replace entity @s container.13 with minecraft:danger_pottery_sherd[item_model="surviwar:back",item_name={translate:"sw.gui.button.back",color:"dark_gray"},lore=[{translate:"sw.gui.button.back.tooltip",color:"gray"}]]
+item replace entity @s container.34 with minecraft:flow_pottery_sherd[item_model="surviwar:ranteam",item_name={translate:"sw.gui.button.ranteam",color:"yellow"},lore=[{translate:"sw.gui.button.ranteam.tooltip",color:"gray"}]]
+
+item replace entity @s container.9 with minecraft:flint[item_model="surviwar:notice",item_name="",tooltip_style="surviwar:tip",minecraft:lore=[\
+                        {text:""},\
+                        {text:""},\
+                        [{translate:"sw.gui.notice.title.gap"},{text:"\uE007","font":"surviwar:item",italic:false,color:white}],\
+                        [{translate:"sw.gui.notice.title.gap"},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0}],\
+                        [{text:"",italic:false,color:white},{translate:"sw.gui.notice.l1",color:"aqua"}],\
+                        [{text:"",italic:false,color:white},{translate:"sw.gui.notice.l2",color:"aqua"}],\
+                        [{text:"",italic:false,color:white},{translate:"sw.gui.notice.l3",color:"aqua"}],\
+                        [{translate:"sw.gui.notice.title.gap"},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0}],\
+                        ],\
+                        minecraft:tooltip_display={hidden_components:["item_model"]}]

@@ -1,4 +1,4 @@
-clear @s
+
 #不变的
 item replace entity @s container.9 with minecraft:arrow[item_model="surviwar:notice",minecraft:item_name="",tooltip_style="surviwar:tip",minecraft:lore=[\
                         {text:""},\
@@ -11,9 +11,17 @@ item replace entity @s container.9 with minecraft:arrow[item_model="surviwar:not
                         [{text:"·",italic:false,color:white},{player:{name:"Aurelith_FW"},color:white},{translate:"sw.info.arena_bulider",color:"aqua"}],\
                         [{text:"\uE005","font":"surviwar:item",italic:false,color:white},{translate:"sw.info.version",font:"default",color:yellow}],\
                         [{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},],\
-                        [{text:"           >>>",color: "gold",italic:false},{translate:"sw.info.extra",color: "green"},{text:"<<<",color:"gold"}]],\
+                        [{translate:"sw.info.gap"},{text:">>>",color: "gold",italic:false},{translate:"sw.info.extra",color: "green",italic:false},{text:"<<<",color:"gold",italic:false}]],\
                         minecraft:tooltip_display={hidden_components:["item_model"]}]
 
 item replace entity @s container.17 with minecraft:brewer_pottery_sherd[item_model="surviwar:question",item_name={translate:"sw.gui.button.help",color:"yellow"},lore=[{translate:"sw.gui.button.help.tooltip",color:"gray"}]]
-item replace entity @s container.35 with minecraft:danger_pottery_sherd[item_model="surviwar:back",item_name={translate:"sw.gui.button.back",color:"dark_gray"},lore=[{translate:"sw.gui.button.back.tooltip",color:"gray"}]]
-item replace entity @s container.18 with minecraft:friend_pottery_sherd[item_model="surviwar:teams",item_name={translate:"sw.gui.button.teams",color:"yellow"}]
+#item replace entity @s container.35 with minecraft:danger_pottery_sherd[item_model="surviwar:back",item_name={translate:"sw.gui.button.back",color:"dark_gray"},lore=[{translate:"sw.gui.button.back.tooltip",color:"gray"}]]
+item replace entity @s container.20 with minecraft:friend_pottery_sherd[item_model="surviwar:teams",item_name={translate:"sw.gui.button.teams",color:"yellow"}]
+
+#变的
+execute if score @s gamer matches 0 run item replace entity @s container.24 with minecraft:blade_pottery_sherd[item_model="surviwar:spectator",item_name={translate:"sw.gui.button.spectator",color:"yellow"},lore=[{translate:"sw.gui.button.spectator.tooltip",color:"gray"}]]
+execute if score @s gamer matches 1 run item replace entity @s container.24 with minecraft:explorer_pottery_sherd[item_model="surviwar:player",item_name={translate:"sw.gui.button.player",color:"yellow"},lore=[{translate:"sw.gui.button.player.tooltip",color:"gray"}]]
+
+execute if score @s readyState matches 1 run item replace entity @s container.22 with minecraft:angler_pottery_sherd[item_model="surviwar:yes",item_name={translate:"sw.gui.button.ready",color:"green"},lore=[{translate:"sw.gui.button.ready.tooltip",color:"gray"}]]
+execute if score @s readyState matches 0 run item replace entity @s container.22 with minecraft:archer_pottery_sherd[item_model="surviwar:no",item_name={translate:"sw.gui.button.not_ready",color:"red"},lore=[{translate:"sw.gui.button.not_ready.tooltip",color:"gray"}]]
+execute if score @s gamer matches 0 run item replace entity @s container.22 with minecraft:arms_up_pottery_sherd[item_model="surviwar:lock",item_name={translate:"sw.gui.button.lock",color:"gray"}]

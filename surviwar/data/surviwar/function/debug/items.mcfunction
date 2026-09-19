@@ -9,7 +9,7 @@ give @s minecraft:arrow[item_model="surviwar:notice",minecraft:item_name="",tool
                         [{text:"·",italic:false,color:white},{player:{name:"Aurelith_FW"},color:white},{translate:"sw.info.arena_bulider",color:"aqua"}],\
                         [{text:"\uE005","font":"surviwar:item",italic:false,color:white},{translate:"sw.info.version",font:"default",color:yellow}],\
                         [{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},{"atlas":"gui","sprite":"surviwar:warning_tape",color:white,shadow_color:0},],\
-                        [{text:"           >>>",color: "gold",italic:false},{translate:"sw.info.extra",color: "green"},{text:"<<<",color:"gold"}]],\
+                        [{translate:"sw.info.gap"},{text:">>>",color: "gold",italic:false},{translate:"sw.info.extra",color: "green",italic:false},{text:"<<<",color:"gold",italic:false}]],\
                         minecraft:tooltip_display={hidden_components:["item_model"]}]
 
 give @s minecraft:angler_pottery_sherd[item_model="surviwar:yes",item_name={translate:"sw.gui.button.ready",color:"green"},lore=[{translate:"sw.gui.button.ready.tooltip",color:"gray"}]]
@@ -22,6 +22,10 @@ give @s minecraft:flow_pottery_sherd[item_model="surviwar:ranteam",item_name={tr
 give @s minecraft:friend_pottery_sherd[item_model="surviwar:teams",item_name={translate:"sw.gui.button.teams",color:"yellow"}]
 give @s minecraft:brewer_pottery_sherd[item_model="surviwar:question",item_name={translate:"sw.gui.button.help",color:"yellow"},lore=[{translate:"sw.gui.button.help.tooltip",color:"gray"}]]
 give @s minecraft:paper[item_model="surviwar:empty",item_name={text:"技术物品",color:"yellow"}]
+
+give @s minecraft:paper[item_model="surviwar:empty",item_name={text:"normal",color:"yellow"},minecraft:equippable={camera_overlay:"surviwar:item/aure_normal",slot:"head"}]
+give @s minecraft:paper[item_model="surviwar:empty",item_name={text:"thinking",color:"yellow"},minecraft:equippable={camera_overlay:"surviwar:item/aure_thinking",slot:"head"}]
+give @s minecraft:paper[item_model="surviwar:empty",item_name={text:"eureka",color:"yellow"},minecraft:equippable={camera_overlay:"surviwar:item/aure_eureka",slot:"head"}]
 
 #TEAMS
 #基本物品，tooltip需要动态更新
