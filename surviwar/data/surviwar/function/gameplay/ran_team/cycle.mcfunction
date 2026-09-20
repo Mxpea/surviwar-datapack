@@ -34,6 +34,24 @@ execute if score purpleTeamMember ranTeamAssignment matches -1 run data modify s
 execute if score magentaTeamMember ranTeamAssignment matches -1 run data modify storage surviwar:ranteam team append value "magenta"
 execute if score pinkTeamMember ranTeamAssignment matches -1 run data modify storage surviwar:ranteam team append value "pink"
 
+scoreboard players set realLenth sw_TMP 0
+execute if score whiteTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score lightGrayTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score grayTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score blackTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score brownTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score redTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score orangeTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score yellowTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score limeTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score greenTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score cyanTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score lightBlueTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score blueTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score purpleTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score magentaTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+execute if score pinkTeamMember ranTeamAssignment matches -1 run scoreboard players add realLenth sw_TMP 1
+
 execute if score whiteTeamMember ranTeamAssignment matches -1 run scoreboard players add whiteTeamMember ranTeamAssignment 1
 execute if score lightGrayTeamMember ranTeamAssignment matches -1 run scoreboard players add lightGrayTeamMember ranTeamAssignment 1
 execute if score grayTeamMember ranTeamAssignment matches -1 run scoreboard players add grayTeamMember ranTeamAssignment 1

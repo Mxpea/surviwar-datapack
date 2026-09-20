@@ -1,3 +1,4 @@
+data remove storage surviwar:ranteam team
 execute store result score ranTeamMember sw_TMP run team list random
 
 execute store result score whiteTeamMember ranTeamAssignment run team list white
