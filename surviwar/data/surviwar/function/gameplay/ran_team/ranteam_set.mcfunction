@@ -1,0 +1,1 @@
+$team join $(target_team) @a[limit=1,sort=random,team=random]

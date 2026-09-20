@@ -35,6 +35,7 @@ execute as @a unless score @s gamer matches 0.. run scoreboard players set @s ga
 
 #TEAM
 scoreboard objectives add teamAvailablity dummy
+scoreboard objectives add ranTeamAssignment dummy
 function surviwar:team/init
 
 #TIPS
@@ -43,3 +44,7 @@ execute in surviwar:lobby run forceload add 0 0 0 0
 execute in surviwar:arena run forceload add 0 0 0 0
 
 schedule function surviwar:deforceload 3s replace
+
+#新增bossbar
+bossbar add sw_lobby ""
+function surviwar:gameplay/lobby/bossbar

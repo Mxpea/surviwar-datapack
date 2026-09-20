@@ -2,9 +2,14 @@
 execute if score @s isInTutorial matches 1 run function surviwar:gui/tutorial/screen
 execute if score @s isInTutorial matches 1 run return 1
 
+#阻止创造模式
+execute if entity @s[gamemode=creative] run return 1
+
 #切换参与状态
 execute if items entity @s player.cursor blade_pottery_sherd run scoreboard players set @s gamer 1
+execute if items entity @s player.cursor blade_pottery_sherd run team join random @s
 execute if items entity @s player.cursor explorer_pottery_sherd run scoreboard players set @s gamer 0
+execute if items entity @s player.cursor explorer_pottery_sherd run team join spectator @s
 
 #切换准备状态
 execute if items entity @s player.cursor angler_pottery_sherd run scoreboard players set @s readyState 0
@@ -38,6 +43,8 @@ execute if items entity @s player.cursor minecraft:pink_wool run team join pink 
 execute if items entity @s player.cursor flow_pottery_sherd run team join random @s
 execute if score @s gamer matches 0 run team join spectator
 
+#gameplay
+function surviwar:gameplay/click_event
 #显示更多信息
 execute if items entity @s player.cursor arrow run function surviwar:gui/extra_info
 
@@ -51,6 +58,5 @@ execute if score @s gui_type matches 1 run function surviwar:gui/pages/main
 
 execute if score @s gui_type matches 2 run function surviwar:gui/pages/teams
 execute if score @s gui_type matches 2 run function surviwar:gui/pages/teams_disable
-
 
 playsound ui.button.click ui @s ~ ~ ~

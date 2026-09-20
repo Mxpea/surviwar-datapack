@@ -15,6 +15,23 @@ execute if entity @s[nbt={Item:{id:"minecraft:purple_wool"}}] run scoreboard pla
 execute if entity @s[nbt={Item:{id:"minecraft:magenta_wool"}}] run scoreboard players set magenta teamAvailablity 0
 execute if entity @s[nbt={Item:{id:"minecraft:pink_wool"}}] run scoreboard players set pink teamAvailablity 0
 
+execute if entity @s[nbt={Item:{id:"minecraft:white_wool"}}] run team empty white
+execute if entity @s[nbt={Item:{id:"minecraft:light_gray_wool"}}] run team empty light_gray
+execute if entity @s[nbt={Item:{id:"minecraft:gray_wool"}}] run team empty gray
+execute if entity @s[nbt={Item:{id:"minecraft:black_wool"}}] run team empty black
+execute if entity @s[nbt={Item:{id:"minecraft:brown_wool"}}] run team empty brown
+execute if entity @s[nbt={Item:{id:"minecraft:red_wool"}}] run team empty red
+execute if entity @s[nbt={Item:{id:"minecraft:orange_wool"}}] run team empty orange
+execute if entity @s[nbt={Item:{id:"minecraft:yellow_wool"}}] run team empty yellow
+execute if entity @s[nbt={Item:{id:"minecraft:lime_wool"}}] run team empty lime
+execute if entity @s[nbt={Item:{id:"minecraft:green_wool"}}] run team empty green
+execute if entity @s[nbt={Item:{id:"minecraft:cyan_wool"}}] run team empty cyan
+execute if entity @s[nbt={Item:{id:"minecraft:light_blue_wool"}}] run team empty light_blue
+execute if entity @s[nbt={Item:{id:"minecraft:blue_wool"}}] run team empty blue
+execute if entity @s[nbt={Item:{id:"minecraft:purple_wool"}}] run team empty purple
+execute if entity @s[nbt={Item:{id:"minecraft:magenta_wool"}}] run team empty magenta
+execute if entity @s[nbt={Item:{id:"minecraft:pink_wool"}}] run team empty pink
+
 execute if entity @s[name="white"] run scoreboard players set white teamAvailablity 1
 execute if entity @s[name="light_gray"] run scoreboard players set light_gray teamAvailablity 1
 execute if entity @s[name="gray"] run scoreboard players set gray teamAvailablity 1
@@ -31,3 +48,5 @@ execute if entity @s[name="blue"] run scoreboard players set blue teamAvailablit
 execute if entity @s[name="purple"] run scoreboard players set purple teamAvailablity 1
 execute if entity @s[name="magenta"] run scoreboard players set magenta teamAvailablity 1
 execute if entity @s[name="pink"] run scoreboard players set pink teamAvailablity 1
+execute as @a[gamemode=!creative] run function surviwar:gui/draw
+kill @s
