@@ -1,4 +1,4 @@
-
+playsound ui.button.click ui @s ~ ~ ~
 #不变的
 item replace entity @s container.9 with minecraft:arrow[item_model="surviwar:notice",minecraft:item_name="",tooltip_style="surviwar:tip",minecraft:lore=[\
                         {text:""},\

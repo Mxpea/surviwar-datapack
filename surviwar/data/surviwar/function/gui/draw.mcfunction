@@ -58,5 +58,3 @@ execute if score @s gui_type matches 1 run function surviwar:gui/pages/main
 
 execute if score @s gui_type matches 2 run function surviwar:gui/pages/teams
 execute if score @s gui_type matches 2 run function surviwar:gui/pages/teams_disable
-
-playsound ui.button.click ui @s ~ ~ ~

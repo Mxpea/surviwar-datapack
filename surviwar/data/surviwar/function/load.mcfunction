@@ -37,6 +37,16 @@ execute as @a unless score @s gamer matches 0.. run scoreboard players set @s ga
 scoreboard objectives add teamAvailablity dummy
 scoreboard objectives add ranTeamAssignment dummy
 function surviwar:team/init
+bossbar add sw_game_start_countdown ""
+bossbar set sw_game_start_countdown color red
+bossbar set sw_game_start_countdown max 200
+
+#timer
+scoreboard objectives add timer dummy
+scoreboard players set gameStartCountdown timer 200
+
+scoreboard objectives add C dummy
+scoreboard players set 20 C 20
 
 #TIPS
 tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]

@@ -8,8 +8,8 @@
       "lakes": false,
       "layers": [
         {
-          "block": "minecraft:air",
-          "height": 1
+          "block": "minecraft:bedrock",
+          "height": 100
         }
       ],
       "structure_overrides": []

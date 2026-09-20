@@ -6,3 +6,5 @@ scoreboard players set lobby structureGen 0
 gamerule advance_weather true
 gamerule advance_time true
 clear @a
+execute in overworld run spreadplayers 0.0 0.0 1000 1000 true @a[team=!spectator]
+execute in overworld run tp @a[team=spectator] 0 100 0
