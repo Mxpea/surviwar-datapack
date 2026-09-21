@@ -6,4 +6,6 @@ scoreboard players add arenaTime_Seconds timer 10
 scoreboard players operation arenaTime_Seconds timer /= 20 C
 bossbar set sw_arena name [{translate:"sw.bossbar.gaming.time",color:green},{score:{name:arenaTime_Seconds,objective:timer},color:"gold"},{text:"s",color:"gray"}]
 scoreboard players remove arenaTime timer 1
+execute if score arenaTime timer matches ..0 run title @a title {translate:"sw.title.endgame.title",color:"yellow",bold:true}
+execute if score arenaTime timer matches ..0 run title @a subtitle [{selector:"@a[gamemode=!spectator]",color:"gold"},{translate:"sw.title.endgame.subtitle.draw",color:"yellow",bold:true}]
 execute if score arenaTime timer matches ..0 run function surviwar:gameplay/endgame
