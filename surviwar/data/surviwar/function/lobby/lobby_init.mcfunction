@@ -1,4 +1,4 @@
-time set day
+time set noon
 weather clear
 gamemode adventure @a
 gamerule advance_weather false
@@ -10,3 +10,4 @@ gamerule locator_bar true
 clear @a
 
 scoreboard players set gameState gaming 0
+scoreboard players set gameStartCountdown timer 200

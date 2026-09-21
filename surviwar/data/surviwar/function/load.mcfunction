@@ -43,10 +43,18 @@ bossbar set sw_game_start_countdown max 200
 
 #timer
 scoreboard objectives add timer dummy
-scoreboard players set gameStartCountdown timer 200
+#scoreboard players set gameStartCountdown timer 200
 
 scoreboard objectives add C dummy
 scoreboard players set 20 C 20
+
+bossbar add sw_gametime ""
+bossbar set sw_gametime color green
+bossbar set sw_gametime max 12000
+
+bossbar add sw_arena ""
+bossbar set sw_arena color red
+bossbar set sw_arena max 6000
 
 #TIPS
 tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]

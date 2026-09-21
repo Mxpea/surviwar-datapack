@@ -1,0 +1,1 @@
+execute as @a at @s run execute in surviwar:arena unless entity @s[distance=0..] run execute in surviwar:arena run tp @s 0 36 0
