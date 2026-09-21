@@ -44,7 +44,6 @@ execute if items entity @s player.cursor flow_pottery_sherd run team join random
 execute if score @s gamer matches 0 run team join spectator
 
 #gameplay
-function surviwar:gameplay/click_event
 #显示更多信息
 execute if items entity @s player.cursor arrow run function surviwar:gui/extra_info
 
