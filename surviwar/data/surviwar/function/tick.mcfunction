@@ -9,6 +9,7 @@ execute as @a if score @s isInTutorial matches 2 run scoreboard players set @s i
 execute as @a if score @s isInTutorial matches 1 run function surviwar:gui/tutorial/dialog
 
 execute if score gameState gaming matches 0 as @a at @s run function surviwar:gui/click_handler
+execute if score gameState gaming matches 0 as @a at @s unless dimension surviwar:lobby run function surviwar:gui/draw
 execute if score gameState gaming matches 0 as @a at @s unless dimension surviwar:lobby run execute in surviwar:lobby run tp @s 17 102 14
 execute if score gameState gaming matches 0 run bossbar set sw_lobby players @a
 execute if score gameState gaming matches 0 run bossbar set sw_lobby visible true
