@@ -5,5 +5,6 @@ scoreboard players set gameState gaming 2
 execute in surviwar:arena run spreadplayers 0 0 50 50 true @a[team=!spectator]
 scoreboard players set arenaTime timer 6000
 gamerule immediate_respawn true
+gamerule locator_bar true
 
 scoreboard objectives add deathCount deathCount
