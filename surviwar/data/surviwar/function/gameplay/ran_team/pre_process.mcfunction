@@ -1,4 +1,5 @@
 data remove storage surviwar:ranteam team
+scoreboard players set realLenth sw_TMP 0
 execute store result score ranTeamMember sw_TMP run team list random
 
 execute store result score whiteTeamMember ranTeamAssignment run team list white
