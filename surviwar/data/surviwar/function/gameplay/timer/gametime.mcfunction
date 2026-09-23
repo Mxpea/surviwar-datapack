@@ -6,4 +6,5 @@ scoreboard players add gameTime_Seconds timer 10
 scoreboard players operation gameTime_Seconds timer /= 20 C
 bossbar set sw_gametime name [{translate:"sw.bossbar.gaming.time",color:green},{score:{name:gameTime_Seconds,objective:timer},color:"gold"},{text:"s",color:"gray"}]
 scoreboard players remove gameTime timer 1
+execute if score gameTime timer matches ..0 run function surviwar:arena/arena_regen
 execute if score gameTime timer matches ..0 run function surviwar:arena/arena_init

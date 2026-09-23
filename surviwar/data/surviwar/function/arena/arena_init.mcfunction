@@ -1,3 +1,4 @@
+
 gamerule pvp true
 difficulty hard
 scoreboard players set gameState gaming 2
@@ -8,3 +9,4 @@ gamerule immediate_respawn true
 gamerule locator_bar true
 
 scoreboard objectives add deathCount deathCount
+execute in surviwar:arena positioned 0 36 0 run place template surviwar:arena

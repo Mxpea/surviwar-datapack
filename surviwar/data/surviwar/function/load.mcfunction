@@ -1,3 +1,6 @@
+execute in surviwar:lobby run forceload remove all
+execute in surviwar:arena run forceload remove all
+
 scoreboard objectives remove sw_TMP
 scoreboard objectives add sw_TMP dummy
 scoreboard players set isDimensionNotLoaded sw_TMP 2
@@ -59,7 +62,7 @@ bossbar set sw_arena max 6000
 #TIPS
 tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]
 execute in surviwar:lobby run forceload add 0 0 0 0
-execute in surviwar:arena run forceload add 0 0 0 0
+execute in surviwar:arena run forceload add 0 0 201 201
 
 schedule function surviwar:deforceload 3s replace
 
