@@ -71,3 +71,5 @@ bossbar add sw_lobby ""
 function surviwar:gameplay/lobby/bossbar
 
 execute unless entity @a run schedule function surviwar:load 5s
+
+scoreboard objectives add arenaMath dummy

@@ -19,3 +19,5 @@ execute in overworld run gamemode spectator @a[team=spectator]
 execute in overworld run tp @a[team=spectator] 0 100 0
 execute as @a at @s run spawnpoint @s
 title @a title {text:"\uE012",font:"surviwar:item"}
+effect clear @a
+item replace entity @a enderchest.* with air
