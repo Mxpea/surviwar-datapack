@@ -15,6 +15,7 @@ execute if score purpleTeamMember ranTeamAssignment matches -2.. run scoreboard 
 execute if score magentaTeamMember ranTeamAssignment matches -2.. run scoreboard players remove magentaTeamMember ranTeamAssignment 1
 execute if score pinkTeamMember ranTeamAssignment matches -2.. run scoreboard players remove pinkTeamMember ranTeamAssignment 1
 
+data remove storage surviwar:ranteam team
 scoreboard players operation RANtotalTeamsCount sw_TMP = totalTeamsCount gaming
 
 execute if score whiteTeamMember ranTeamAssignment matches -1 run data modify storage surviwar:ranteam team append value "white"
