@@ -14,5 +14,3 @@ tag @a[team=blue] add blue
 tag @a[team=purple] add purple
 tag @a[team=magenta] add magenta
 tag @a[team=pink] add pink
-
-function surviwar:gameplay/ran_team/team_empty

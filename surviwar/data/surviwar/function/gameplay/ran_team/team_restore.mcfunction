@@ -1,3 +1,6 @@
+
+function surviwar:gameplay/ran_team/team_empty
+
 team join white @a[tag=white]
 team join light_gray @a[tag=light_gray]
 team join gray @a[tag=gray]
