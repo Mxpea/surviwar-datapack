@@ -1,0 +1,18 @@
+tag @a[team=white] add white
+tag @a[team=light_gray] add light_gray
+tag @a[team=gray] add gray
+tag @a[team=black] add black
+tag @a[team=brown] add brown
+tag @a[team=red] add red
+tag @a[team=orange] add orange
+tag @a[team=yellow] add yellow
+tag @a[team=lime] add lime
+tag @a[team=green] add green
+tag @a[team=cyan] add cyan
+tag @a[team=light_blue] add light_blue
+tag @a[team=blue] add blue
+tag @a[team=purple] add purple
+tag @a[team=magenta] add magenta
+tag @a[team=pink] add pink
+
+function surviwar:gameplay/ran_team/team_empty

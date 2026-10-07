@@ -1,0 +1,16 @@
+team empty white
+team empty light_gray
+team empty gray
+team empty black
+team empty brown
+team empty red
+team empty orange
+team empty yellow
+team empty lime
+team empty green
+team empty cyan
+team empty light_blue
+team empty blue
+team empty purple
+team empty magenta
+team empty pink

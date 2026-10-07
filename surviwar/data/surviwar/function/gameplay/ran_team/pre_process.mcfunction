@@ -1,6 +1,7 @@
 data remove storage surviwar:ranteam team
 scoreboard players set realLenth sw_TMP 0
 execute store result score ranTeamMember sw_TMP run team list random
+function surviwar:gameplay/ran_team/team_storge
 
 execute store result score whiteTeamMember ranTeamAssignment run team list white
 execute store result score lightGrayTeamMember ranTeamAssignment run team list light_gray
@@ -36,4 +37,6 @@ execute if score purple teamAvailablity matches 0 run scoreboard players reset p
 execute if score magenta teamAvailablity matches 0 run scoreboard players reset magentaTeamMember ranTeamAssignment
 execute if score pink teamAvailablity matches 0 run scoreboard players reset pinkTeamMember ranTeamAssignment
 
+function surviwar:gameplay/ran_team/team_restore
 function surviwar:gameplay/ran_team/cycle
+team empty random

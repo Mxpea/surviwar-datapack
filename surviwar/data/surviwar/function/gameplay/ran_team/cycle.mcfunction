@@ -16,7 +16,7 @@ execute if score magentaTeamMember ranTeamAssignment matches -2.. run scoreboard
 execute if score pinkTeamMember ranTeamAssignment matches -2.. run scoreboard players remove pinkTeamMember ranTeamAssignment 1
 
 data remove storage surviwar:ranteam team
-scoreboard players operation RANtotalTeamsCount sw_TMP = totalTeamsCount gaming
+#scoreboard players operation RANtotalTeamsCount sw_TMP = totalTeamsCount gaming
 
 execute if score whiteTeamMember ranTeamAssignment matches -1 run data modify storage surviwar:ranteam team append value "white"
 execute if score lightGrayTeamMember ranTeamAssignment matches -1 run data modify storage surviwar:ranteam team append value "light_gray"
@@ -69,5 +69,5 @@ execute if score blueTeamMember ranTeamAssignment matches -1 run scoreboard play
 execute if score purpleTeamMember ranTeamAssignment matches -1 run scoreboard players add purpleTeamMember ranTeamAssignment 1
 execute if score magentaTeamMember ranTeamAssignment matches -1 run scoreboard players add magentaTeamMember ranTeamAssignment 1
 execute if score pinkTeamMember ranTeamAssignment matches -1 run scoreboard players add pinkTeamMember ranTeamAssignment 1
-
+#return fail
 function surviwar:gameplay/ran_team/cycle_pick with storage surviwar:ranteam
