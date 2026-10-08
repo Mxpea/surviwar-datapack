@@ -1,8 +1,9 @@
 time set noon
 weather clear
 gamemode adventure @a
+#gamerule fall_damage false
 gamerule advance_weather false
-gamerule advance_time false
+#gamerule advance_time false
 gamerule pvp false
 xp set @a 0 levels
 difficulty peaceful

@@ -1,4 +1,4 @@
-execute in surviwar:lobby run tp @a 16 103 16
+execute in surviwar:lobby run tp @a 28 103 28
 gamemode adventure @a
 function surviwar:lobby/lobby_init
 scoreboard players set gameState gaming 0

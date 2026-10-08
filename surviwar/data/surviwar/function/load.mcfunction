@@ -59,6 +59,9 @@ bossbar add sw_arena ""
 bossbar set sw_arena color red
 bossbar set sw_arena max 6000
 
+#parkor=
+scoreboard objectives add parkourStage dummy
+
 #TIPS
 tellraw @a [{translate:"sw.PLEASE_INSTALL_RESOURCE_PACK!!",color:red},{translate:"sw.CLICK_HERE_TO_INSTALL",color:green,"click_event":{action:"open_url",url:"https://www.example.com"}}]
 execute in surviwar:lobby run forceload add 0 0 0 0
