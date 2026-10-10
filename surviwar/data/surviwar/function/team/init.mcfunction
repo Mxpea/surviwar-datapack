@@ -55,5 +55,24 @@ team modify pink prefix [{text:"[",color:yellow},{translate:"sw.team.pink"},{tex
 team modify random prefix [{text:"[",color:yellow},{translate:"sw.team.random"},{text:"]",color:yellow}]
 team modify spectator prefix [{text:"[",color:gray},{translate:"sw.team.spectator"},{text:"]",color:gray}]
 
+team modify white collisionRule never
+team modify light_gray collisionRule never
+team modify gray collisionRule never
+team modify black collisionRule never
+team modify brown collisionRule never
+team modify red collisionRule never
+team modify orange collisionRule never
+team modify yellow collisionRule never
+team modify lime collisionRule never
+team modify green collisionRule never
+team modify cyan collisionRule never
+team modify light_blue collisionRule never
+team modify blue collisionRule never
+team modify purple collisionRule never
+team modify magenta collisionRule never
+team modify pink collisionRule never
+team modify random collisionRule never
+team modify spectator collisionRule never
+
 execute unless score initialize teamAvailablity matches 1 run function surviwar:team/team_availablity_init
 scoreboard players set initialize teamAvailablity 1

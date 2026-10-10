@@ -5,7 +5,6 @@ scoreboard objectives remove sw_TMP
 scoreboard objectives add sw_TMP dummy
 scoreboard players set isDimensionNotLoaded sw_TMP 2
 
-
 scoreboard objectives add gaming dummy
 #维护几个变量
 # gameState: 0-游戏未开始 1-游戏进行中 2-游戏结束
@@ -59,7 +58,11 @@ bossbar add sw_arena ""
 bossbar set sw_arena color red
 bossbar set sw_arena max 6000
 
-#parkor=
+bossbar add sw_readytime ""
+bossbar set sw_readytime color yellow
+bossbar set sw_readytime max 1200
+
+#parkor
 scoreboard objectives add parkourStage dummy
 
 #TIPS

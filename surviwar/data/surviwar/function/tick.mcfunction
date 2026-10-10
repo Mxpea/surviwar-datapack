@@ -11,12 +11,10 @@ execute as @a if score @s isInTutorial matches 1 run function surviwar:gui/tutor
 execute if score gameState gaming matches 0 as @a at @s run function surviwar:gui/click_handler
 execute if score gameState gaming matches 0 as @a at @s run function surviwar:lobby/parkour/main
 execute if score gameState gaming matches 0 as @a at @s unless dimension surviwar:lobby run function surviwar:gui/draw
-execute if score gameState gaming matches 0 as @a at @s unless dimension surviwar:lobby run execute in surviwar:lobby run tp @s 28 103 28
+execute if score gameState gaming matches 0 as @a at @s unless dimension surviwar:lobby run execute in surviwar:lobby run tp @s[gamemode=!creative] 28 103 28
 execute if score gameState gaming matches 0 run bossbar set sw_lobby players @a
 execute if score gameState gaming matches 0 run bossbar set sw_lobby visible true
 execute unless score gameState gaming matches 0 run bossbar set sw_lobby visible false
-#execute if score gameState gaming matches 0 run bossbar set sw_game_start_countdown visible true
-#execute unless score gameState gaming matches 0 run bossbar set sw_game_start_countdown visible false
 execute if score gameState gaming matches 2 run bossbar set sw_arena visible true
 execute unless score gameState gaming matches 2 run bossbar set sw_arena visible false
 

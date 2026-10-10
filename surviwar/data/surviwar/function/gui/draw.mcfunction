@@ -52,8 +52,8 @@ execute unless score @s gui_type matches 0.. run scoreboard players set @s gui_t
 execute unless score @s gamer matches 0.. run scoreboard players set @s gamer 1
 execute unless score @s readyState matches 0.. run scoreboard players set @s readyState 0
 
-#gui_type 1-主菜单 2-队伍
+#gui_type 1-主菜单 2-队伍 3-设置
 execute if score @s gui_type matches 1 run function surviwar:gui/pages/main
-
 execute if score @s gui_type matches 2 run function surviwar:gui/pages/teams
 execute if score @s gui_type matches 2 run function surviwar:gui/pages/teams_disable
+execute if score @s gui_type matches 3 run function surviwar:gui/pages/settings
