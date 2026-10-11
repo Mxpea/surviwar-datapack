@@ -77,3 +77,6 @@ bossbar add sw_lobby ""
 function surviwar:gameplay/lobby/bossbar
 
 execute unless entity @a run schedule function surviwar:load 5s
+
+execute unless score gameTime gameSettings matches -2147483648..2147483647 run function surviwar:game_init
+execute unless score gameTime gameSettings matches -2147483648..2147483647 run function surviwar:reset_settings

@@ -16,6 +16,7 @@ execute if items entity @s player.cursor angler_pottery_sherd run scoreboard pla
 execute if items entity @s player.cursor archer_pottery_sherd run scoreboard players set @s readyState 1
 
 #切换gui页面
+execute if items entity @s player.cursor minecraft:snort_pottery_sherd run scoreboard players set @s gui_type 3
 execute if items entity @s player.cursor friend_pottery_sherd run scoreboard players set @s gui_type 2
 execute if items entity @s player.cursor danger_pottery_sherd run scoreboard players set @s gui_type 1
 
@@ -46,6 +47,22 @@ execute if score @s gamer matches 0 run team join spectator
 #gameplay
 #显示更多信息
 execute if items entity @s player.cursor arrow run function surviwar:gui/extra_info
+
+#切换倒计时按钮
+execute unless score buttonType gameSettings matches 0.. run scoreboard players set buttonType gameSettings 0
+execute if items entity @s player.cursor minecraft:shelter_pottery_sherd run scoreboard players add buttonType gameSettings 1
+
+#其他设置
+execute if items entity @s player.cursor scrape_pottery_sherd run function surviwar:reset_settings
+execute if items entity @s player.cursor prize_pottery_sherd run scoreboard players set nightVision gameSettings 0
+execute if items entity @s player.cursor plenty_pottery_sherd run scoreboard players set nightVision gameSettings 1
+execute if items entity @s player.cursor mourner_pottery_sherd run scoreboard players set keepInv gameSettings 0
+execute if items entity @s player.cursor miner_pottery_sherd run scoreboard players set keepInv gameSettings 1
+execute if items entity @s player.cursor howl_pottery_sherd run scoreboard players set friendFire gameSettings 0
+execute if items entity @s player.cursor heartbreak_pottery_sherd run scoreboard players set friendFire gameSettings 1
+
+#更改时间
+function surviwar:gui/time_process
 
 clear @s
 execute unless score @s gui_type matches 0.. run scoreboard players set @s gui_type 1

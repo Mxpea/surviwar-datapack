@@ -28,6 +28,7 @@ function surviwar:gameplay/main
 function surviwar:gameplay/lobby/bossbar
 execute unless score gameState gaming matches 1 run bossbar set sw_gametime visible false
 
+execute unless score gameState gaming matches 0 if score nightVision gameSettings matches 1 run effect give @a minecraft:night_vision 20 1 true
 
 #GEN 保持最低
 execute in surviwar:lobby if entity @a[distance=0..] run function surviwar:lobby/lobby_regen

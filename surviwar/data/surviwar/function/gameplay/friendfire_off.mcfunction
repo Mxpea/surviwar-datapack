@@ -1,0 +1,16 @@
+team modify white friendlyFire true
+team modify light_gray friendlyFire true
+team modify gray friendlyFire true
+team modify black friendlyFire true
+team modify brown friendlyFire true
+team modify red friendlyFire true
+team modify orange friendlyFire true
+team modify yellow friendlyFire true
+team modify lime friendlyFire true
+team modify green friendlyFire true
+team modify cyan friendlyFire true
+team modify light_blue friendlyFire true
+team modify blue friendlyFire true
+team modify purple friendlyFire true
+team modify magenta friendlyFire true
+team modify pink friendlyFire true

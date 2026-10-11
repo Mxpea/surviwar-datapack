@@ -19,6 +19,7 @@ item replace entity @s container.17 with minecraft:brewer_pottery_sherd[item_mod
 item replace entity @s container.20 with minecraft:friend_pottery_sherd[item_model="surviwar:teams",item_name={translate:"sw.gui.button.teams",color:"yellow"}]
 item replace entity @s container.4 with minecraft:totem_of_undying[item_name={text:"Aurelith_FW",color:"yellow"},tooltip_style="surviwar:tip"]
 
+item replace entity @s container.26 with minecraft:snort_pottery_sherd[item_model="surviwar:settings",item_name={translate:"sw.gui.button.settings",color:"yellow"},lore=[{translate:"sw.gui.button.settings.tooltip",color:"gray"}]]
 
 #变的
 execute if score @s gamer matches 0 run item replace entity @s container.24 with minecraft:blade_pottery_sherd[item_model="surviwar:spectator",item_name={translate:"sw.gui.button.spectator",color:"yellow"},lore=[{translate:"sw.gui.button.spectator.tooltip",color:"gray"}]]

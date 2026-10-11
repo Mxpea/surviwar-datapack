@@ -15,4 +15,5 @@ execute in surviwar:arena run tp @a[team=purple] 26. 2. 67.
 execute in surviwar:arena run tp @a[team=magenta] 46. 2. 67.
 execute in surviwar:arena run tp @a[team=pink] 66. 2. 67.
 
-scoreboard players set readyTime timer 1200
+scoreboard players operation readyTime timer = readyTime gameSettings
+#scoreboard players set readyTime timer 1200

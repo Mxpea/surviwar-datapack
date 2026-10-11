@@ -1,5 +1,6 @@
 gamemode survival @a
-scoreboard players set gameTime timer 12000
+scoreboard players operation gameTime timer = gameTime gameSettings
+#scoreboard players set gameTime timer 12000
 scoreboard players set gameState gaming 1
 team join random @a[team=]
 function surviwar:gameplay/ran_team/pre_process

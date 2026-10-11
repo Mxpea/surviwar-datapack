@@ -10,5 +10,7 @@ scoreboard players operation bossbar_start_countdown timer = gameStartCountdown 
 scoreboard players add bossbar_start_countdown timer 10
 scoreboard players operation bossbar_start_countdown timer /= 20 C
 
+function surviwar:gameplay/__settings_use
 execute unless score gameStartCountdown timer matches ..5 run bossbar set sw_game_start_countdown name [{translate:"sw.bossbar.start.time",color:green},{score:{name:bossbar_start_countdown,objective:timer},color:"gold"}]
 execute if score gameStartCountdown timer matches ..5 run bossbar set sw_game_start_countdown name [{translate:"sw.bossbar.start.loading",color:gold}]
+item replace entity @a enderchest.* with air
