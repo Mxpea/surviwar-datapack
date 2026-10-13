@@ -1,5 +1,6 @@
 
 gamerule pvp true
+scoreboard players set @a damage 0
 difficulty hard
 scoreboard players set gameState gaming 3
 gamemode adventure @a[team=!spectator]

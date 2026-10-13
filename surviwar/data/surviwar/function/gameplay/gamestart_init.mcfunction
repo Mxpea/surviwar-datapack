@@ -23,3 +23,4 @@ execute as @a at @s run spawnpoint @s
 title @a title {text:"\uE012",font:"surviwar:item"}
 effect clear @a
 item replace entity @a enderchest.* with air
+function surviwar:gameplay/print_settings

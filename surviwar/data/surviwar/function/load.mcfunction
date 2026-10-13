@@ -4,8 +4,10 @@ execute in surviwar:arena run forceload remove all
 scoreboard objectives remove sw_TMP
 scoreboard objectives add sw_TMP dummy
 scoreboard players set isDimensionNotLoaded sw_TMP 2
-
+scoreboard objectives add score dummy {translate:"sw.scoreboard.score.title",color:"yellow"}
+scoreboard objectives add damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add gaming dummy
+scoreboard objectives setdisplay sidebar score
 #维护几个变量
 # gameState: 0-游戏未开始 1-游戏进行中 2-游戏结束
 
