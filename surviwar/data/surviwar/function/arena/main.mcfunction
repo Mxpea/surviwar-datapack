@@ -5,9 +5,9 @@ execute as @a run scoreboard players operation @s score += @s damage
 scoreboard players set @a damage 0
 
 execute as @a[team=!spectator] at @s run spawnpoint @s
+execute as @a[team=!spectator] if score @s deathCount matches 1.. run scoreboard players add @a[gamemode=!spectator] score 10
 execute as @a[team=!spectator] if score @s deathCount matches 1.. run gamemode spectator @s
 execute as @a[team=!spectator] at @s if score @s deathCount matches 1.. run particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 1 200
-execute as @a[team=!spectator] if score @s deathCount matches 1.. run scoreboard players add @a[gamemode=!spectator] score 10
 execute as @a[team=!spectator] at @s if score @s deathCount matches 1.. run function surviwar:arena/team_win
 execute as @a[team=!spectator] if score @s deathCount matches 1.. run scoreboard players set @s deathCount 0
 

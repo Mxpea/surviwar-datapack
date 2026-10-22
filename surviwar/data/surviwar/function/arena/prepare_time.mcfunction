@@ -16,4 +16,5 @@ execute in surviwar:arena run tp @a[team=magenta] 46. 2. 67.
 execute in surviwar:arena run tp @a[team=pink] 66. 2. 67.
 
 scoreboard players operation readyTime timer = readyTime gameSettings
+execute as @a at @s run spawnpoint
 #scoreboard players set readyTime timer 1200
